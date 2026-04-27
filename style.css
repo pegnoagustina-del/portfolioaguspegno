@@ -1,4 +1,5 @@
 
+/*BANNNNNERRRRRRRRRR MIO*/
 .banner-inicio {
   min-height: 90vh;
   background-image: url("images/agus.jpg");
@@ -25,6 +26,14 @@
   z-index: 2;
   text-align: center;
 }
+
+
+
+
+
+
+/*ESTAMPITAS*/
+
 .estampa {
   height: 70px;
   margin-right: 20px;
@@ -54,6 +63,11 @@
     transform: translateX(-50%);
   }
 }
+
+
+
+
+/*SOBRE MI COSAS*/
 .sobre-mi {
   background-color: #f7f7f7;
 }
@@ -77,6 +91,14 @@
   overflow: hidden;
 }
 
+.sobre-mi .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+/*VIVIENNE LOGO FONDO*/
 .dibujo-fondo {
   position: absolute;
 
@@ -92,10 +114,10 @@
   pointer-events: none;
 }
 
-.sobre-mi .container {
-  position: relative;
-  z-index: 2;
-}
+
+
+/*BRISSSTOL*/
+
 .bristol {
   background-color: white;
 }
@@ -113,7 +135,6 @@
 .inclinada-der {
   transform: rotate(6deg);
 }
-
 
 
 .bristol-centro h2 {
@@ -143,13 +164,14 @@
 }
 
 
+
+
+/* POYECTTTTTTTTTTTTSSSSSSSSSSSSS!!!!! */
 .titulo-proyecto {
   font-size: 5.8rem !important;
   font-weight: 200;
   margin-bottom: 50px !important;
 }
-
-/* PROYECTOS */
 
 .proyecto-borges {
   background-color: #f7f7f7;
@@ -169,6 +191,8 @@
 }
 
 
+
+/*3DDDDDDDDDDDDDDDD*/
 .proyecto-3d {
   background-color: #f7f7f7;
   ;
@@ -198,7 +222,10 @@
   border-top: none;
 }
 
-/* FOTOGRAFÍA */
+
+
+
+/* FOTOS ANALOGGG */
 
 #fotografia {
   width: 100%;
@@ -322,6 +349,11 @@
 }
 
 
+
+
+
+/*PIE ULTIMO*/
+
 footer {
   margin-top: 100px;
 }
@@ -345,6 +377,10 @@ footer .btn:hover {
   transform: translateY(-2px);
 }
 
+
+
+
+/*JS VOLVER AL INICIO*/
 .volver-arriba {
   position: fixed;
   right: 25px;
@@ -365,6 +401,10 @@ html {
 .card:hover {
   transform: translateY(-5px);
 }
+
+
+
+
 .navbar {
   position: sticky;
   top: 0;
@@ -374,8 +414,10 @@ html {
   height: auto;
   object-fit: cover;
 }
-/* ACHICAR PROYECTOS PRINCIPALES */
 
+
+
+/* ACHICAR borges */
 .proyecto-borges,
 .proyecto-3d {
   max-width: 900px !important;
@@ -391,4 +433,62 @@ html {
 .proyecto-3d .ratio {
   max-width: 800px;
   margin: 0 auto;
+}
+
+
+
+/**PARA HACER Q 3D QUEDE ABAJO DEL OTRO*//
+@media (max-width: 768px) {
+  .proyecto-3d .d-flex {
+    flex-direction: column !important;
+  }
+
+  .mini-axe {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 260px;
+    object-fit: cover;
+  }
+}
+
+/*CARROUSEL DE ULT MOMENTO PARA 3D*/
+.mini-axe {
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .mini-axe {
+    height: 240px;
+  }
+}
+
+
+/*FONDO GARABATOS BRISTOL*/
+.bristol-fondo {
+  position: relative;
+}
+
+.bristol-fondo::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image: url("images/bristolfondo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  opacity: 0.50;
+
+  pointer-events: none;
+
+  z-index: 5;
+}
+
+.bristol-fondo > * {
+  position: relative;
+  z-index: 2;
 }
